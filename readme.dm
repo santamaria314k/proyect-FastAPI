@@ -1,10 +1,10 @@
-Prueba Técnica – FastAPI, PostgreSQL, JWT, Docker
+#Prueba Técnica – FastAPI, PostgreSQL, JWT, Docker
 
-Este proyecto es una API REST desarrollada con FastAPI, PostgreSQL, SQLAlchemy, autenticación JWT, Alembic y Docker Compose.
+**Este proyecto es una API REST desarrollada con FastAPI, PostgreSQL, SQLAlchemy, autenticación JWT, Alembic y Docker Compose.**
 
 La aplicación incluye autenticación de usuarios, protección de rutas, migraciones de base de datos y un entorno completamente contenerizado para facilitar su ejecución y evaluación.
 
-Tecnologías Utilizadas
+**Tecnologías Utilizadas:**
 
 Python 3.11
 
@@ -26,19 +26,19 @@ Docker Compose
 
 
 
- Evaluador
-descarga una copia del proyecto:
+ **Evaluador**
+-descarga una copia del proyecto:
 git clone repo-url
-ejecuta con Docker PostgreSQL y la API:
+-ejecuta con Docker PostgreSQL y la API:
 docker-compose up --build
-ejecuta la migracion que esta en la carpeta [alembic/versions/nitial_migration.py]:
+-ejecuta la migracion ya creada  que esta en la carpeta [alembic/versions/initial_migration.py]:
 docker-compose exec api alembic upgrade head
 
 
 
 
 
-Cómo Ejecutar el Proyecto
+**Cómo Ejecutar el Proyecto (antes de las migraciones):**
 
 1. Clonar el repositorio
 git clone <URL-REPOSITORIO>
@@ -87,11 +87,11 @@ alembic_version
 
 Documentación de la API
 
-Una vez el proyecto esté en ejecución, se puede acceder a la documentación interactiva en:
+**Una vez el proyecto esté en ejecución, se puede acceder a la documentación interactiva en:**
 
 http://localhost:8000/docs
 
-Flujo de Uso y Autenticación
+**Flujo de Uso y Autenticación:**
 1. Intentar crear una tarea sin autenticación
 POST /tasks
 
@@ -135,20 +135,9 @@ Respuesta:
   "token_type": "bearer"
 }
 
-4. Autorizar en Swagger
-
-Acceder a /docs
-
-Hacer clic en Authorize
-
-Ingresar:
-
-Bearer JWT_TOKEN
 
 
-Confirmar autorización
-
-5. Consultar usuarios (opcional)
+4. Consultar usuarios (opcional)
 GET /users
 
 
@@ -161,7 +150,7 @@ Ejemplo de respuesta:
   }
 ]
 
-6. Uso del CRUD de Tareas (protegido)
+5. Uso del CRUD de Tareas (protegido)
 
 Una vez autenticado, se puede acceder a los siguientes endpoints:
 

@@ -197,7 +197,7 @@ Validación del token y del usuario en cada request
 
 
 
-Notas Finales
+Notas Finales  
 1 . probar las funciones de crear task que se negara el acceso al no tener token de acceso  
 2.crear usuario username y password  
 3.loguearse enpoint (Auth) con el usuario y la contraseña registrados  

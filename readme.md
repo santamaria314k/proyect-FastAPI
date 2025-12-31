@@ -1,4 +1,4 @@
-#Prueba Técnica – FastAPI, PostgreSQL, JWT, Docker
+# Prueba Técnica – FastAPI, PostgreSQL, JWT, Docker
 
 **Este proyecto es una API REST desarrollada con FastAPI, PostgreSQL, SQLAlchemy, autenticación JWT, Alembic y Docker Compose.**
 
